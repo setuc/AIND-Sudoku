@@ -3,11 +3,14 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The first step that I used in the naked twins problem was to find the cell value with len(cell) == 2. Once found, I 
+try to look for its twin, i.e. the cell containing the same two values. Once found, we use constraint propagation to 
+eliminate the two numbers from its peers. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: I added the two diagonals values to the unit list. For the solution of the problem, it did not matter how the cells
+were ordered. As long as the cell addresses were provided, the solution seemed to be working. 
 
 ### Install
 
@@ -29,9 +32,12 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 * `PySudoku.py` - Do not modify this. This is code for visualizing your solution.
 * `visualize.py` - Do not modify this. This is code for visualizing your solution.
 
-### Visualizing
+### Visualizing 
 
 To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in solution.py
+
+Based on the default value given the program, this is the visualized solution that was obtained. 
+!['2.............62....1....7...6..8...3...9...7...6..4...4....8....52.............3'](images/solution.jpg?raw=true)
 
 ### Data
 
